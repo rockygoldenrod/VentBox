@@ -38,7 +38,10 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)), url('yell.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: white;
             padding: 100px 0;
             text-align: center;
@@ -57,19 +60,20 @@
         }
 
         .email-box {
-            background: rgba(255,255,255,0.15);
+            background: rgba(0,0,0,0.3);
             backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 10px;
-            padding: 20px;
+            border: 3px solid rgba(251, 146, 60, 0.5);
+            border-radius: 15px;
+            padding: 30px 50px;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 40px;
         }
 
         .email-box code {
-            font-size: 1.5em;
+            font-size: 2.5em;
             color: #fff;
-            font-weight: 600;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
 
         /* How It Works */
@@ -177,6 +181,114 @@
             color: #666;
         }
 
+        /* Important Info */
+        .important-info {
+            padding: 60px 0;
+            background: #f9fafb;
+        }
+
+        .important-info h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #374151;
+        }
+
+        .important-info .content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #6b7280;
+        }
+
+        /* Privacy Policy */
+        .privacy {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .privacy h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #667eea;
+        }
+
+        .privacy-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .privacy-content h3 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .privacy-content p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .privacy-content ul {
+            color: #555;
+            line-height: 1.8;
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* Rating System */
+        .rating-system {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .rating-system h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #667eea;
+        }
+
+        .rating-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .rating-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-left: 5px solid #667eea;
+        }
+
+        .rating-icon {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+        }
+
+        .rating-info h3 {
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 1.3em;
+        }
+
+        .rating-info p {
+            color: #666;
+            margin: 0;
+        }
+
         /* Footer */
         footer {
             background: #2c3e50;
@@ -213,8 +325,7 @@
             <h2>Vent Safely, Work Smarter</h2>
             <p>Write that angry email. Click send. We'll make sure you don't regret it.</p>
             <div class="email-box">
-                <p>Send your workplace frustrations to:</p>
-                <code>vent@ventbox.net</code>
+                <code>clicksend@ventbox.net</code>
             </div>
         </div>
     </section>
@@ -226,22 +337,23 @@
                 <div class="step">
                     <div class="step-number">1</div>
                     <h3>Write Your Vent</h3>
-                    <p>Draft that email to your coworker, boss, or colleague expressing your true feelings. Don't hold back.</p>
+                    <p>You've already written that draft to your coworker, boss, or colleague with some hard truths in there. You didn't hold back.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Send to VentBox</h3>
-                    <p>Instead of hitting send to them, send it to <strong>vent@ventbox.net</strong>. Get the satisfaction of clicking send.</p>
+                    <h3>WAIT! Send to VentBox</h3>
+                    <p>If you're on the fence about this, or maybe you know it's not good - let us help you out. You spent your precious time typing this out, so don't delete it. Get the satisfaction of clicking send! Just send it to <strong>clicksend@ventbox.net</strong> instead.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Get AI Analysis</h3>
-                    <p>Our AI analyzes your email for professionalism, safety, and career impact. You'll get a score: Would this get you fired? <span class="safety-badge">Score: 0-100</span></p>
+                    <h3>Get Your Score</h3>
+                    <p>Our proprietary analysis model has been thoroughly tested for consistency and objectiveness.</p>
+                    <p style="margin-top: 15px; font-size: 2.5em; letter-spacing: 15px;">🟢 🟡 🔴</p>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h3>Receive Validation</h3>
-                    <p>Get an empathetic reply acknowledging your frustration, plus a professionally rewritten version you can actually send (if you want).</p>
+                    <h3>Receive Feedback</h3>
+                    <p>Along side your 'score' we have a team of experts: business professionals, career coaches, counselors, therapists who can get you on the right track. Email rephrasing will come through the website or through an emailed link - but that feature is coming soon.</p>
                 </div>
             </div>
         </div>
@@ -249,11 +361,103 @@
 
     <section class="mission">
         <div class="container">
-            <h2>Our Mission</h2>
+            <h2>Transform Workplace Stress into Clarity</h2>
             <div class="mission-content">
-                <p>Everyone has workplace frustrations. The urge to send <em>that email</em> is real. But so are the consequences.</p>
+                <p>A confidential email service designed for business professionals to process workplace frustrations safely and constructively. Release tension, gain perspective, and return to work with renewed focus.</p>
+                <p style="margin-top: 20px;">Everyone has workplace frustrations. The urge to send <em>that email</em> is real. But so are the consequences.</p>
                 <p style="margin-top: 20px;">VentBox exists to give you a safe space to express yourself without risking your career. We validate your feelings, provide perspective, and help you communicate professionally—even when you're anything but calm.</p>
                 <p style="margin-top: 20px;">Your frustration is valid. Your job security matters more.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="rating-system">
+        <div class="container">
+            <h2>Understanding Your Score</h2>
+            <div class="rating-grid">
+                <div class="rating-item">
+                    <svg class="rating-icon" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#10b981" stroke="#059669" stroke-width="3"/>
+                        <path d="M 30 50 L 45 65 L 75 35" stroke="white" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="rating-info">
+                        <h3>🟢 CLEAR</h3>
+                        <p>Safe to send</p>
+                    </div>
+                </div>
+
+                <div class="rating-item">
+                    <svg class="rating-icon" viewBox="0 0 100 100">
+                        <rect x="5" y="5" width="90" height="90" fill="#e5e7eb" stroke="#9ca3af" stroke-width="3" rx="5"/>
+                        <text x="50" y="65" font-size="40" font-weight="bold" text-anchor="middle" fill="#6b7280">□</text>
+                    </svg>
+                    <div class="rating-info">
+                        <h3>⬜ SQUARE</h3>
+                        <p>Too cautious</p>
+                    </div>
+                </div>
+
+                <div class="rating-item">
+                    <svg class="rating-icon" viewBox="0 0 100 100">
+                        <path d="M 50 10 L 95 90 L 5 90 Z" fill="#fbbf24" stroke="#f59e0b" stroke-width="3"/>
+                        <circle cx="38" cy="38" r="6" fill="#78350f"/>
+                        <path d="M 38 44 L 38 60 M 38 50 L 28 48 M 38 50 L 48 48 M 38 60 L 32 72 M 38 60 L 48 68" stroke="#78350f" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M 55 72 Q 60 70 65 72 M 58 78 Q 63 76 68 78" stroke="#78350f" stroke-width="2" stroke-linecap="round" fill="none"/>
+                    </svg>
+                    <div class="rating-info">
+                        <h3>🟡 CAUTION</h3>
+                        <p>Risky territory</p>
+                    </div>
+                </div>
+
+                <div class="rating-item">
+                    <svg class="rating-icon" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="#ef4444" stroke="#dc2626" stroke-width="3"/>
+                        <path d="M 30 30 L 70 70 M 70 30 L 30 70" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                    </svg>
+                    <div class="rating-info">
+                        <h3>🔴 DANGER</h3>
+                        <p>Someone will have a bad day</p>
+                    </div>
+                </div>
+
+                <div class="rating-item">
+                    <svg class="rating-icon" viewBox="0 0 110 100">
+                        <circle cx="35" cy="50" r="35" fill="#dc2626" stroke="#991b1b" stroke-width="3"/>
+                        <circle cx="75" cy="50" r="35" fill="#dc2626" stroke="#991b1b" stroke-width="3"/>
+                        <text x="35" y="65" font-size="36" font-weight="bold" text-anchor="middle" fill="white">!</text>
+                        <text x="75" y="65" font-size="36" font-weight="bold" text-anchor="middle" fill="white">!</text>
+                    </svg>
+                    <div class="rating-info">
+                        <h3>🔴🔴 SEVERE</h3>
+                        <p>HR incoming</p>
+                    </div>
+                </div>
+
+                <div class="rating-item">
+                    <svg class="rating-icon" viewBox="0 0 100 100">
+                        <circle cx="50" cy="30" r="25" fill="#b91c1c" stroke="#7f1d1d" stroke-width="3"/>
+                        <circle cx="28" cy="65" r="25" fill="#b91c1c" stroke="#7f1d1d" stroke-width="3"/>
+                        <circle cx="72" cy="65" r="25" fill="#b91c1c" stroke="#7f1d1d" stroke-width="3"/>
+                        <circle cx="50" cy="50" r="12" fill="#7f1d1d" stroke="#450a0a" stroke-width="2"/>
+                    </svg>
+                    <div class="rating-info">
+                        <h3>🔴🔴🔴 CRITICAL</h3>
+                        <p>Pack your desk</p>
+                    </div>
+                </div>
+
+                <div class="rating-item">
+                    <svg class="rating-icon" viewBox="0 0 110 100">
+                        <path d="M 20 25 L 35 50 L 20 75 L 5 50 Z" fill="#000000" stroke="#ef4444" stroke-width="2"/>
+                        <path d="M 55 25 L 70 50 L 55 75 L 40 50 Z" fill="#000000" stroke="#ef4444" stroke-width="2"/>
+                        <path d="M 90 25 L 105 50 L 90 75 L 75 50 Z" fill="#000000" stroke="#ef4444" stroke-width="2"/>
+                    </svg>
+                    <div class="rating-info">
+                        <h3>◆◆◆ ARMAGEDDON</h3>
+                        <p>Career over</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -263,20 +467,20 @@
             <h2>Future Roadmap</h2>
             <div class="roadmap-items">
                 <div class="roadmap-item">
-                    <h3>📊 Personal Dashboard</h3>
-                    <p>Track your vent history, see patterns in your workplace frustrations, and monitor your emotional trends over time.</p>
+                    <h3>📊 Historical Dashboard</h3>
+                    <p>View aggregated data trends from all users on the website. Track workplace sentiment patterns across industries and time periods.</p>
                 </div>
                 <div class="roadmap-item">
                     <h3>🎯 Industry-Specific Analysis</h3>
                     <p>Tailored feedback based on your industry (tech, healthcare, finance, etc.) with context-aware professional norms.</p>
                 </div>
                 <div class="roadmap-item">
-                    <h3>🤝 Team Vent Mode</h3>
-                    <p>Anonymous team venting channels for companies who want to understand workplace sentiment without pointing fingers.</p>
+                    <h3>💪 Stronger Reply Support</h3>
+                    <p>Enhanced response system with detailed analysis, multiple rewrite options, and contextual communication strategies tailored to your specific workplace situation.</p>
                 </div>
                 <div class="roadmap-item">
-                    <h3>📱 Mobile App</h3>
-                    <p>Draft and send vents directly from your phone. Frustration doesn't wait until you're at your desk.</p>
+                    <h3>📧 Integration with Outlook and Gmail</h3>
+                    <p>Seamless plugin integration directly into your email client. Send vents to VentBox without leaving your inbox.</p>
                 </div>
                 <div class="roadmap-item">
                     <h3>🧠 Career Coaching Integration</h3>
@@ -286,10 +490,63 @@
         </div>
     </section>
 
+    <section class="important-info">
+        <div class="container">
+            <h2>Professional Use Only</h2>
+            <div class="content">
+                <p><strong>VentBox is designed exclusively for professional workplace interactions.</strong></p>
+                <p style="margin-top: 20px;">Our service screens concerns for improving workplace communications and professional relationships. This service is not currently designed to assist with personal matters, and emails regarding personal issues will not be responded to.</p>
+                <p style="margin-top: 20px;">Target use case: Professional emails to coworkers, managers, colleagues, clients, or other business contacts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="privacy">
+        <div class="container">
+            <h2>Privacy Policy</h2>
+            <div class="privacy-content">
+                <p><strong>Last Updated: October 2025</strong></p>
+                
+                <h3>Overview</h3>
+                <p>VentBox is committed to protecting your privacy. This policy outlines how we collect, use, and protect your information when you use our service.</p>
+                <p style="margin-top: 10px;"><strong>We will never sell your data.</strong> Not only because it's evil, but also because we don't even know how to.</p>
+                
+                <h3>Information We Collect</h3>
+                <p>When you send an email to VentBox, we collect:</p>
+                <ul>
+                    <li>Email content (the message you send to clicksend@ventbox.net)</li>
+                    <li>Your email address (to send you a response)</li>
+                    <li>Email metadata (date, time, subject line if provided)</li>
+                </ul>
+
+                <h3>PII Sanitization</h3>
+                <p>We have a filtering and screening layer that pseudonymizes any personally identifiable information (PII) that is detected. This includes names, phone numbers, addresses, employee IDs, and other identifying information. Your privacy is protected through automated PII detection and replacement.</p>
+                
+                <h3>How We Use Your Information</h3>
+                <p>Your information is used solely to:</p>
+                <ul>
+                    <li>Analyze the content of your email for safety scoring</li>
+                    <li>Provide feedback and professional guidance</li>
+                    <li>Send you a response with your results</li>
+                    <li>Improve our analysis models (in anonymized, aggregated form)</li>
+                </ul>
+                
+                <h3>Data Security</h3>
+                <p>We implement industry-standard security measures to protect your data. All emails are processed through secure, encrypted channels. Your email content is confidential and will never be shared with third parties, employers, or any external entities.</p>
+                
+                <h3>Data Retention</h3>
+                <p>Email content is retained only as long as necessary to provide our service and improve our models. Data is stored with pseudonyms in place. Data is routinely moved to an air-gapped storage system.</p>
+                
+                <h3>Contact</h3>
+                <p>For privacy concerns or questions, contact us at: <a href="mailto:clicksend@ventbox.net" style="color: #667eea;">clicksend@ventbox.net</a></p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
-            <p>&copy; 2025 VentBox. All rights reserved. | <a href="mailto:vent@ventbox.net" style="color: #667eea;">vent@ventbox.net</a></p>
-            <p style="margin-top: 10px;">Vent responsibly. Work happily.</p>
+            <p>&copy; 2025 VentBox. All rights reserved. | <a href="mailto:clicksend@ventbox.net" style="color: #667eea;">clicksend@ventbox.net</a></p>
+            <p style="margin-top: 10px;">Please Vent Responsibly</p>
         </div>
     </footer>
 </body>
